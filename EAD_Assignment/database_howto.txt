@@ -1,0 +1,21 @@
+RestaurantInfo database: 3 tables:
+
+	All not null: Basically just set the column name and type. The program should handle the rest.
+
+	Users:
+		Username: Varchar (16)
+		Password: Char(32) - Stores the checksum, always hash passwords.
+		
+		
+	PendingReservations:
+		FName = Varchar (20)
+		SName = Varchar (40)
+		Email = Varchar (128)
+		NumPeople = Int
+		Time = time
+		Date = date
+	
+	ApprovedReservations:
+		Same as Pending Reservations
+	
+	

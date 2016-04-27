@@ -1,3 +1,5 @@
+<h1>La Corona Restaurant: Reservation Form</h1>
+
 <form action="" method="">
 	<table style="width:70%">
 		<tr>
@@ -7,7 +9,7 @@
 		
 		<tr>
 			<td>Surname: </td>
-			<td><input required type="text" name="sname" placeholder="Bloggs"></td>
+			<td><input required type="text" maxlength="40" name="sname" placeholder="Bloggs"></td>
 		</tr>
 		
 		<tr>
