@@ -1,3 +1,10 @@
+<?php
+	if(isset($_COOKIE["user_logged_in"])){
+		header("Location: ../");
+		die();
+	}
+?>
+
 <h1>La Corona Restaurant: User Login</h1><br><br>
 
 <form action="" method="">
