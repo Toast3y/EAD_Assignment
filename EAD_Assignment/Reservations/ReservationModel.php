@@ -26,13 +26,16 @@ class ReservationModel
 		{
 			//validation check
 			//check if values given can work by passing them into the validation suite
-			//if()
-			//{
+			if(($this->validationSuite->isLengthStringValid ( $newReserv ["FName"], "TABLE_RESERVATION_FNAME_LENGTH" ))
+				($this->validationSuite->isLengthStringValid ( $newReserv ["SName"], "TABLE_RESERVATION_SNAME_LENGTH" ))
+				($this->validationSuite->isLengthStringValid ( $newReserv ["Email"], "TABLE_RESERVATION_EMAIL_LENGTH" ))
+				)
+			{
 				if ($newId = $this->ReservationDAO->createNewReservation ( $newReserv ))
 				{
 					return ($newId);
 				}
-			//}
+			}
 		}
 		
 		// if validation fails or insertion fails
